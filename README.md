@@ -18,11 +18,11 @@ windows:   `websocket_uart.exe --host="192.168.1.123" --com="COM2"`
 | 参数名           | 作用         | 类型    | 必选 | 默认值 |
 | --------------- | ------ | ---- | --------------- | --------------- |
 | host            | 设备IP地址或域名 | string | 是 | |
-| uartCom         | 要连接的串口 | string | 是 | |
-| uartBaud        | 波特率 80-5000000 | int    |      | 115200 |
-| uartStopBit     | 停止位 1-2 | int    |      | 1 |
-| uartDataBit     | 数据位 5-8 | int    |      | 8 |
-| uartParityCheck | 校验模式：0-不校验 1-奇校验 2-偶检验 | int    |      | 0 |
+| com      | 要连接的串口 | string | 是 | |
+| baud    | 波特率 80-5000000 | int    |      | 115200 |
+| stop | 停止位 1-2 | int    |      | 1 |
+| data | 数据位 5-8 | int    |      | 8 |
+| check | 校验模式：0-不校验 1-奇校验 2-偶检验 | int    |      | 0 |
 | proxy           | 使用代理地址 | string |      | 空 |
 | ssl             | 使用SSL连接（https） | bool   |      | 空 |
 | ip              | 多张网卡使用此参数指定IP地址 | string |      | 空（自动） |
