@@ -27,3 +27,12 @@ windows:   `websocket_uart.exe --host="192.168.1.123" --com="COM2"`
 | ssl             | 使用SSL连接（https） | bool   |      | 空 |
 | ip              | 多张网卡使用此参数指定IP地址 | string |      | 空（自动） |
 
+## 错误解决
+
+**帮忙点个Star谢谢 Thanks♪(･ω･)ﾉ**
+
+提出错误：[Issues · liujiaqi7998/websocket_uart (github.com)](https://github.com/liujiaqi7998/websocket_uart/issues)
+
+#### 已知错误：
+
+1. 过快发送信息回导致卡死
