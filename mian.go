@@ -86,7 +86,15 @@ func main() {
 	}
 
 	log.Println("本机IP是:", net.IP(localIp))
-
+	log.Println("连接到：", host)
+	log.Println("波特率：", uartBaud)
+	log.Println("数据位：", uartDataBit)
+	log.Println("停止位：", uartStopBit)
+	log.Println("校验位：", uartParityCheck)
+	if len(proxy) > 0 {
+		log.Println("使用代理：", proxy)
+	}
+	fmt.Println("--------------------------------------------")
 	result, err := uartConfigInt(uartStopBit, uartDataBit, uartParityCheck)
 	if err != nil {
 		log.Fatalf("[加载串口配置时错误] %v", err)
